@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Brick Breaker</title>
+    <link rel="stylesheet" ng-href="reset.css" media="screen" title="no title">
+    <link rel="stylesheet" ng-href="style.css" media="screen" title="no title">
+    <link rel="stylesheet" ng-href="sweetalert2.css" media="screen" title="no title">
+    <link rel="stylesheet" href="animate.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="slide">
+            <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+            <ul id="navToggle" class="burger slide">
+                <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h1 class="h1-Austin">AUSTIN ⚡ WALKER</h1>
+        </header>
+
+        <nav class="slide">
+            <ul>
+                <li><a ui-sref="home" class="active">HOME</a></li>
+                <li><a ui-sref="game">GAME</a></li>
+                <li><a ui-sref="hacker">HACKER</a></li>
+            </ul>
+        </nav>
+
+        <div class="content slide">
+            <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+            <ul class="responsive">
+                <li class="body-section">
+                    <p class="placefiller">
+                        <ui-view></ui-view>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- <ui-view></ui-view> -->
+
+
+
+
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script src="./js/myApp.js"></script>
+<script src="./js/homeCtrl.js"></script>
+<script src="./js/govHacker.js"></script>
+<script src="./js/govService.js"></script>
+<script src="./js/hackerCtrl.js"></script>
+<script src="./js/govService.js"></script>
+<script src="./js/govHackLog.js"></script>
+<script src="./js/sweetalert2.js"></script>
+<script src="./js/game.js"></script>
+
+
+</html>

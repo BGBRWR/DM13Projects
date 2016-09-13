@@ -1,0 +1,17 @@
+<h2 id="hackTitle">Hack the Government</h2>
+<div class="selection">
+
+</div>
+<div class="dropdown">
+    <button ng-click="showDropDown()" class="dropbtn">Choose Building to Hack</button>
+    <div ng-repeat="building in buildings" selector="selected">
+        <div ng-class="myList" ng-hide="dropHidden" ng-click="selectB(building)">
+            {{building}}
+        </div>
+        <!-- <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a ng-repeat=""></a>
+
+    </div> -->
+    </div>
+</div>
